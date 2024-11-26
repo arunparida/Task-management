@@ -14,6 +14,7 @@ const AdminModel = require("./models/user.model");
 // import routes
 const UserRoutes = require("./routes/user.routes");
 const TaskRoutes = require("./routes/task.routes");
+const AuthRoutes = require("./routes/auth.routes");
 
 // Middleware for enabling CORS
 app.use(cors());
@@ -25,6 +26,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use("/api/user", UserRoutes);
 app.use("/api/task", TaskRoutes);
+app.use("/api/auth", AuthRoutes);
 
 const startServer = async () => {
   try {
