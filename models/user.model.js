@@ -29,11 +29,11 @@ const userSchema = new mongoose.Schema(
     },
     isActive: {
       type: Boolean,
-      default: true
+      default: true,
     },
     refreshToken: {
       type: String,
-    }
+    },
   },
   { timestamps: true }
 );

@@ -4,7 +4,7 @@ const {
   updateTask,
   deleteTask,
   updateUser,
-  assignTask
+  assignTask,
 } = require("../controllers/admin.controller");
 const userAuth = require("../middlewares/auth.middleware");
 const checkAdmin = require("../middlewares/checkAdmin.middleware");
