@@ -1,5 +1,6 @@
 const UserModel = require("../models/user.model");
 const ApiResponse = require("../utils/ApiResponse");
+const TaskModel = require("../models/task.model");
 
 // Get User Profile by ID
 const getUserProfile = async (req, res) => {
